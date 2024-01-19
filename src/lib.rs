@@ -13,6 +13,8 @@
 //! - [`wasm_sync::Condvar`](crate::Condvar)
 //! - [`wasm_sync::Mutex`](crate::Mutex)
 //! - [`wasm_sync::RwLock`](crate::RwLock)
+//! - [`wasm_sync::Once`](crate::Once)
+//! - [`wasm_sync::OnceLock`](crate::OnceLock)
 //! 
 //! ## Usage
 //! 

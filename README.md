@@ -14,6 +14,8 @@ On native platforms, `wasm_sync` simply re-exports the standard library's synchr
 - `wasm_sync::Condvar`
 - `wasm_sync::Mutex`
 - `wasm_sync::RwLock`
+- `wasm_sync::Once`
+- `wasm_sync::OnceLock`
 
 ## Usage
 
