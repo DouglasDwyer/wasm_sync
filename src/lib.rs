@@ -35,8 +35,8 @@
 //! 
 
 /// Provides the ability to generate and compare type IDs in a `const` context.
-#[cfg_attr(target_arch = "wasm32", path = "wasm.rs")]
-#[cfg_attr(not(target_arch = "wasm32"), path = "native.rs")]
+#[cfg_attr(all(target_arch = "wasm32", target_feature = "atomics"), path = "wasm.rs")]
+#[cfg_attr(not(all(target_arch = "wasm32", target_feature = "atomics")), path = "native.rs")]
 mod backend;
 
 pub use crate::backend::*;

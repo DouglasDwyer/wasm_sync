@@ -1,6 +1,6 @@
 [package]
 name = "wasm_sync"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/DouglasDwyer/wasm_sync"
@@ -10,4 +10,6 @@ Synchronization primitives for both web and native.
 """
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-web-sys = { version = "0.3.24", features = [ "Window" ] }
+js-sys = { version = "0.3.67", default-features = false }
+wasm-bindgen = { version = "0.2.90", default-features = false }
+web-sys = { version = "0.3.24", default-features = false, features = [ "Window" ] }

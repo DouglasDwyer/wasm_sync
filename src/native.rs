@@ -1,5 +1,10 @@
+#![allow(deprecated)]
+
 pub use std::sync::{
     Condvar,
     Mutex,
-    RwLock
+    RwLock,
+    Once,
+    OnceLock,
+    ONCE_INIT
 };
